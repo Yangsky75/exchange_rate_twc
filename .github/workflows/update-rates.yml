@@ -1,0 +1,33 @@
+name: 更新海關每旬匯率
+
+on:
+  schedule:
+    - cron: "30 0 1,2,11,12,21,22 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 下載匯率
+        run: python scripts/update_rates.py
+      - name: 有變動才 commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/rates.json
+          if git diff --cached --quiet; then echo "沒有變動"; exit 0; fi
+          git commit -m "更新海關每旬匯率 $(date -u +'%Y-%m-%d')"
+          git pull --rebase
+          git push
