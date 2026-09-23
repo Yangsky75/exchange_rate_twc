@@ -1,0 +1,123 @@
+{
+ "source": "範例資料（取自每旬匯率換算表V2.ods），第一次執行 GitHub Actions 後會被覆蓋",
+ "fetched_at": null,
+ "period": {
+  "year": 114,
+  "month": 1,
+  "period": 3
+ },
+ "rates": {
+  "ARS": {
+   "buy": 0.03173,
+   "sell": null
+  },
+  "AUD": {
+   "buy": 20.41,
+   "sell": null
+  },
+  "BRL": {
+   "buy": 5.4138,
+   "sell": null
+  },
+  "CAD": {
+   "buy": 22.97,
+   "sell": null
+  },
+  "CHF": {
+   "buy": 36.14,
+   "sell": null
+  },
+  "CLP": {
+   "buy": 0.03268,
+   "sell": null
+  },
+  "CNY": {
+   "buy": 4.476,
+   "sell": null
+  },
+  "DKK": {
+   "buy": 4.5172,
+   "sell": null
+  },
+  "EUR": {
+   "buy": 33.88,
+   "sell": null
+  },
+  "GBP": {
+   "buy": 40.25,
+   "sell": null
+  },
+  "HKD": {
+   "buy": 4.215,
+   "sell": null
+  },
+  "IDR": {
+   "buy": 0.00203,
+   "sell": null
+  },
+  "ILS": {
+   "buy": 9.03283,
+   "sell": null
+  },
+  "INR": {
+   "buy": 0.38093,
+   "sell": null
+  },
+  "JPY": {
+   "buy": 0.2088,
+   "sell": null
+  },
+  "KRW": {
+   "buy": 0.02247,
+   "sell": null
+  },
+  "MYR": {
+   "buy": 7.3204,
+   "sell": null
+  },
+  "NOK": {
+   "buy": 2.879,
+   "sell": null
+  },
+  "NZD": {
+   "buy": 18.48,
+   "sell": null
+  },
+  "PEN": {
+   "buy": 8.75497,
+   "sell": null
+  },
+  "PHP": {
+   "buy": 0.5628,
+   "sell": null
+  },
+  "PLN": {
+   "buy": 7.89833,
+   "sell": null
+  },
+  "SEK": {
+   "buy": 2.92,
+   "sell": null
+  },
+  "SGD": {
+   "buy": 24.11,
+   "sell": null
+  },
+  "THB": {
+   "buy": 0.9369,
+   "sell": null
+  },
+  "TWD": {
+   "buy": 1,
+   "sell": null
+  },
+  "USD": {
+   "buy": 33.015,
+   "sell": null
+  },
+  "ZAR": {
+   "buy": 1.712,
+   "sell": null
+  }
+ }
+}
